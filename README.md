@@ -70,8 +70,8 @@ In addition to the libraries, the project also includes:
   * `airflow webserver &` - run airflow webserver.
   * `nohup airflow scheduler &` - run airflow scheduler in the background.
 
-7. Access Airflow through the web browser using url: "ec2-public-ipv4-dns":8080
+10. Access Airflow through the web browser using url: "ec2-public-ipv4-dns":8080
 
-8. In the Airflow UI, enable the `myblood_project` DAG. The pipeline will run on the schedule defined in the DAG. For this project, set to 10:00AM everyday.
+11. In the Airflow UI, enable the `myblood_project` DAG. The pipeline will run on the schedule defined in the DAG. For this project, set to 10:00AM everyday.
 
-9. For everytime the EC2 stops or reboots, repeat 9. 
+12. For everytime the EC2 stops or reboots, repeat 9. 
