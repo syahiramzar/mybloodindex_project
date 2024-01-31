@@ -67,4 +67,4 @@ In addition to the libraries, the project also includes:
 
 7. Access Airflow through browser the using url: <ec2-public-ipv4-dns>:8080
 
-8. In the Airflow UI, enable the `myblooddonation` DAG. The pipeline will run on the schedule defined in the DAG.
+8. In the Airflow UI, enable the `myblood_project` DAG. The pipeline will run on the schedule defined in the DAG.
