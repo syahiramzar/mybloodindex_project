@@ -26,8 +26,7 @@ Prerequisites:
 
 The end result will be a pipeline defintion as illustrated below.
 
-IMAGE
-
+![image](https://github.com/syahiramzar/mybloodindex_project/assets/128501870/4ef420a1-428b-4014-9367-0deb5abb402b)
 
 ## Project files
 In addition to the libraries, the project also includes:
