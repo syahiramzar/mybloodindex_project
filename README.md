@@ -24,7 +24,8 @@ Prerequisites:
 * Airflow
 * Python libraries, as listed in `requirements.txt`
 
-The end result will be a pipeline defintion as illustrated below.
+
+The end result will be a pipeline definition in Apache Airflow as illustrated below.
 
 ![image](https://github.com/syahiramzar/mybloodindex_project/assets/128501870/4ef420a1-428b-4014-9367-0deb5abb402b)
 
