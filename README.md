@@ -14,7 +14,7 @@ MOH Malaysia releases public data regarding blood donation index everyday. Thus,
 * [Apache Airlfow](https://airflow.apache.org/)
 * [AWS S3](https://aws.amazon.com/s3/)
 
-AWS EC2 instance with the following specs is used:
+* [AWS EC2](https://aws.amazon.com/ec2/) instance with the following specs is used:
 
 ![image](https://github.com/syahiramzar/mybloodindex_project/assets/128501870/5fe746d4-b0cd-4b7d-8653-dc6dfbb22e79)
 
