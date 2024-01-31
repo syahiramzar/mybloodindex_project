@@ -4,7 +4,7 @@ Automated data pipeline workflows using Apache Airflow that loads and processes 
 
 ## Objective
 
-MOH Malaysia releases public data regarding blood donation index everyday. Thus, this project aims to utilize those data by preparing charts and reports for the public to view easily using Telegram automated bot.
+MOH Malaysia releases public data regarding blood donation index everyday. Thus, the goal of this project is to utilize those data by preparing charts and reports for the public to view easily using Telegram automated bot. Using Apache Airflow, a data pipeline workflow was created with custom operators that perform tasks such as extract and transform data, generate data visualizations, upload into s3 bucket and blast a notification Telegram users (in group). The telegram bot will be ran 24/7, while the data will be refreshed at 10:00AM (MYT) everyday. 
 
 ## Architecture
 
@@ -24,7 +24,7 @@ Prerequisites:
 * Airflow
 * Python libraries, as listed in `requirements.txt`
 
-The goal of this project is to author a data pipeline workflow created with custom operators within the Airflow platform that perform tasks such as extract and transform data, generate data visualizations, upload into s3 bucket and blast a notification Telegram users (in group). The end result will be a pipeline defintion as illustrated below.
+The end result will be a pipeline defintion as illustrated below.
 
 IMAGE
 
@@ -56,9 +56,11 @@ In addition to the libraries, the project also includes:
 
 4. Intall Apache Airflow using pip command.
 
-5. Place all the project files in their corresponding directories.
+5. Install libraries as listed in `requirements.txt`. 
 
-6. Use these commands to run:
+6. Place all the project files in their corresponding directories.
+
+7. Use these commands to run:
 
   * `nohup python blood_telebot.py &` - run telegram-bot 24/7 in the background.
   * `airflow db init` - initialize airflow database
@@ -67,4 +69,4 @@ In addition to the libraries, the project also includes:
 
 7. Access Airflow through browser the using url: <ec2-public-ipv4-dns>:8080
 
-8. In the Airflow UI, enable the `myblood_project` DAG. The pipeline will run on the schedule defined in the DAG.
+8. In the Airflow UI, enable the `myblood_project` DAG. The pipeline will run on the schedule defined in the DAG. For this project, set to 10:00AM everyday.
