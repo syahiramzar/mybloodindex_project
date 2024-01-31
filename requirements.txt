@@ -1,0 +1,11 @@
+pip install pandas
+pip install s3fs==2023.12.2
+pip install boto3
+pip install matplotlib
+pip install plotly
+pip install requests
+pip install fastparquest
+pip install pyarrow
+pip install seaborn
+pip install python-telegram-bot==13.7
+pip install kaleido ==0.1.0
