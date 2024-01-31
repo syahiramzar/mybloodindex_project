@@ -46,7 +46,7 @@ In addition to the libraries, the project also includes:
 * IAMFullAccess
 * AmazonEC2FullAccess
 
-2. On first set-up, install the following libraries using these commands:
+2. On first connect to instance, install the following libraries using these commands:
 
   * `sudo apt update` - ensure EC2 has the latest files.
   * `sudo apt install python3-pip` - install python 3 pip
