@@ -1,4 +1,4 @@
-# Data pipelines with Apache Airflow and AWS EC2 and S3
+# Data Pipelines with Apache Airflow and AWS EC2 and S3
 
 Automated data pipeline workflows using Apache Airflow that loads and processes data in AWS EC2 and then upload into a AWS S3 bucket. In addition, a telegram-bot program is set-up to run 24/7 in AWS EC2 instance to enable user to view reports.
 
@@ -53,18 +53,22 @@ In addition to the libraries, the project also includes:
 
 3. Go into virtual environment by using this command: `source /venv/bin/activate`
 
-4. Intall Apache Airflow using pip command.
+4. Intall Apache Airflow using `pip install apache-airflow` command.
 
-5. Install libraries as listed in `requirements.txt`. 
+5. Install python libraries as listed in `requirements.txt`.
 
-6. Place all the project files in their corresponding directories.
+6. Use `cd airflow` and then `makedir "folder_name"` to create a new folder. 
 
-7. Use these commands to run:
+7. Place all the project files in their corresponding directories.
+
+8. Update `home/airflow/airflow.cfg` file to include DAGs in the newly created folder as in 6. 
+
+9. Use these commands to run:
 
   * `nohup python blood_telebot.py &` - run telegram-bot 24/7 in the background.
-  * `airflow db init` - initialize airflow database
-  * `airflow webserver &` - run airflow webserver
-  * `nohup airflow scheduler` - run airflow scheduler
+  * `airflow db init` - initialize airflow database.
+  * `airflow webserver &` - run airflow webserver.
+  * `nohup airflow scheduler &` - run airflow scheduler in the background.
 
 7. Access Airflow through browser the using url: <ec2-public-ipv4-dns>:8080
 
