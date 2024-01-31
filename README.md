@@ -32,11 +32,11 @@ IMAGE
 ## Project files
 In addition to the libraries, the project also includes:
 
-`myblooddonation_dag.py` - DAG (Directed Acyclic Graph) definition script. Placed in `home/airflow/project_dag` folder.
-`myblood_etl_code.py` - Python script for extracting and transforming data. Placed in `home/airflow/project_dag` folder.
-`myblood_dataviz_code.py` - Python script for data visualization. Placed in `home/airflow/project_dag` folder.
-`myblood_blast_code.py` - Python script for sending Telegram message. Placed in `home/airflow/project_dag` folder.
-`blood_telebot.py` - Python script for telegram-bot than runs 24/7 Placed in `home/` folder.
+* `myblooddonation_dag.py` - DAG (Directed Acyclic Graph) definition script. Placed in `home/airflow/project_dag` folder.
+* `myblood_etl_code.py` - Python script for extracting and transforming data. Placed in `home/airflow/project_dag` folder.
+* `myblood_dataviz_code.py` - Python script for data visualization. Placed in `home/airflow/project_dag` folder.
+* `myblood_blast_code.py` - Python script for sending Telegram message. Placed in `home/airflow/project_dag` folder.
+* `blood_telebot.py` - Python script for telegram-bot than runs 24/7 Placed in `home/` folder.
 
 # Steps to run project
 
