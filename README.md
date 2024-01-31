@@ -4,7 +4,7 @@ Automated data pipeline workflows using Apache Airflow that loads and processes 
 
 ## Objective
 
-MOH Malaysia releases public data regarding blood donation index everyday. Thus, this project aims to utilize those data by preparing charts and reports for the public to view easily.
+MOH Malaysia releases public data regarding blood donation index everyday. Thus, this project aims to utilize those data by preparing charts and reports for the public to view easily using Telegram automated bot.
 
 ## Architecture
 
@@ -64,3 +64,7 @@ In addition to the libraries, the project also includes:
   * `airflow db init` - initialize airflow database
   * `airflow webserver &` - run airflow webserver
   * `nohup airflow scheduler` - run airflow scheduler
+
+7. Access Airflow through browser the using url: <ec2-public-ipv4-dns>:8080
+
+8. In the Airflow UI, enable the `myblooddonation` DAG. The pipeline will run on the schedule defined in the DAG.
