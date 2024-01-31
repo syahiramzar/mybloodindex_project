@@ -63,7 +63,7 @@ In addition to the libraries, the project also includes:
 
 8. Update `home/airflow/airflow.cfg` file to include DAGs in the newly created folder as in 6. 
 
-9. Use these commands to run:
+9. For first time or after EC2 reboot, use these commands to run:
 
   * `nohup python blood_telebot.py &` - run telegram-bot 24/7 in the background.
   * `airflow db init` - initialize airflow database.
