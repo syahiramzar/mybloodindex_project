@@ -63,7 +63,7 @@ In addition to the libraries, the project also includes:
 
 8. Update `home/airflow/airflow.cfg` file to include DAGs in the newly created folder as in 6. 
 
-9. For first time or after EC2 reboot, use these commands to run:
+9. From root directory, use these commands to run:
 
   * `nohup python blood_telebot.py &` - run telegram-bot 24/7 in the background.
   * `airflow db init` - initialize airflow database.
@@ -73,3 +73,5 @@ In addition to the libraries, the project also includes:
 7. Access Airflow through browser the using url: <ec2-public-ipv4-dns>:8080
 
 8. In the Airflow UI, enable the `myblood_project` DAG. The pipeline will run on the schedule defined in the DAG. For this project, set to 10:00AM everyday.
+
+9. For everytime the EC2 stops or reboots, repeat 9. 
